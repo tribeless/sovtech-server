@@ -12,12 +12,12 @@ cache:
 #   only:
 #   - dev
 
-# install:
-#   - npm install
+install:
+  - npm install
 
 script:
   # - echo "skipping tests"
-  # - npm start &
+  - npm start &
   - npm test
 
 # after_success: npm run coverage
