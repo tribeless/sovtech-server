@@ -1,8 +1,6 @@
 const axios = require("axios");
-require("dotenv").config();
 
-const {URL:url} = process.env;
-
+const url = "http://localhost:3005/graphql";
 const peopleDetails = async variables =>
     await axios.post(url, {
         query: `
