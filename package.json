@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "sovtech test server",
   "main": "app.js",
+  "engines": {
+    "node": "12.18.1"
+  },
   "scripts": {
     "test": "mocha 'server/**/*.test.js' --timeout 10000",
-    "start": "nodemon server/app.js"
+    "start": "node server/app.js"
   },
   "keywords": [
     "sovtech",

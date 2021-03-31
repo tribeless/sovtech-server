@@ -24,4 +24,3 @@ app.use(cors());
 server.applyMiddleware({app,cors:false});
 
 app.listen(process.env.PORT, () => console.log(`🚀 App running on http://localhost:${process.env.PORT}/graphql`));
-module.exports = app;
