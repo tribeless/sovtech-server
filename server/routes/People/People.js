@@ -47,14 +47,29 @@ class PeoplesApi {
         }
     }
 
+    async films(args){
+        const {url} = args;
+        try{
+            const response = await axios.get(`${url}`);
+            return response.data;
+        }
+        catch(e){
+            throw new Error("Could not retrieve requested film information");
+        }
+    }
     static reducedResults(item){
-        const {name,gender,mass,height,homeworld} = item;
+        const {name,gender,mass,height,homeworld,films,hair_color,skin_color,eye_color,birth_year} = item;
         return {
             name,
             height,
             gender,
             homeworld,
-            mass:mass.toString()
+            mass:mass.toString(),
+            films,
+            hair_color,
+            skin_color,
+            eye_color,
+            birth_year,
         }
     }
 }

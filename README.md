@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.com/tribeless/sovtech-server.svg?branch=master)](https://travis-ci.com/tribeless/sovtech-server)
+
 # Sovtech Star Wars Api Test
 
 This is a backend application that consumes the star wars rest api and exposes graphql queries to be consumed by the frontend part of the application.
@@ -9,14 +12,14 @@ Link to public server [click here]()
 ### `Technologies Used`
 
 Uses expressjs\
-Uses apollo-server-express\
+Uses apollo-server-express
 
 #### `File Structure`
 
 Application code is found in the server/ folder\
 Graphql schema found in server/schema\
 Graphql resolvers found in server/resolvers\
-Unit tests found in server/__tests__\
+Unit tests found in server/__tests__
 
 ### `CI/CD`
 
